@@ -5,7 +5,6 @@ import getText2 from './module_that_uses_lodash';
 function component() {
   const element = document.createElement('div');
 
-  // Lodash, currently included via a script, is required for this line to work
   element.innerHTML = _.join(['Hello', 'webpack'], ' ') + getText1() + getText2();
 
   return element;
